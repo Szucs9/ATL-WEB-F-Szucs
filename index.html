@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Gibt die Sprache der Seite als Deutsch an -->
+<head>
+    <meta charset="UTF-8"> <!-- Gibt das Zeichensatz-Encoding an, um Sonderzeichen korrekt darzustellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Website auf mobilen Geräten in der richtigen Grösse angezeigt wird -->
+    <meta name="description" content="Über uns - it4kids"> <!-- Beschreibt den Inhalt der Seite für Suchmaschinen -->
+    <title>it4kids - Startseite</title><!-- Titel der Seite, erscheint im Browser-Tab und Suchmaschinen -->
+    
+    <!-- Bootstrap Stylesheet für responsives Design und Grundgerüst -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Stylesheet für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <!-- Benutzerdefiniertes Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header mit Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap Navbar, die sich bei kleinen Viewports anpasst -->
+        <div class="container"> <!-- Container für die zentrierte Ausrichtung der Navigation -->
+            <!-- Link zur Startseite -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <span class="brand-text">it4kids</span>
+            </a>
+            <!-- Button für die mobile Navigation -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Bootstrap Icon für den Hamburger-Button -->
+            </button>
+
+            <!-- Navigationselemente im Hauptmenü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Navbar-Elemente, die sich am rechten Rand ausrichten -->
+                    <!-- Link zur Seite 'Über uns' -->
+                    <li class="nav-item"><a class="nav-link" href="ueber.html">Über uns</a></li>
+                    <!-- Dropdown-Menü für Kurse -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurse <!-- Name des Dropdown-Menüs -->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurseDropdown">
+                            <!-- Links zu den verschiedenen Kursen -->
+                            <a class="dropdown-item" href="programmierung.html">Programmierung</a>
+                            <a class="dropdown-item" href="robotik.html">Robotik</a>
+                            <a class="dropdown-item" href="cybersicherheit.html">Cybersicherheit</a>
+                            <a class="dropdown-item" href="netzwerktechnik.html">Netzwerktechnik</a>
+                        </div>
+                    </li>
+                    <!-- Link zur Seite 'Anmeldung' -->
+                    <li class="nav-item"><a class="nav-link" href="anmeldung.html">Anmeldung</a></li>
+                    <!-- Link zur Seite 'Kontakt' -->
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hauptinhalt Abschnitt -->
+<main>
+    <article class="container mt-5 vision-section">
+        <h1 class="text-center animate-text">Unsere Vision</h1>
+        <div class="row mt-4 text-center">
+            <!-- Technologie-Icon und Vision -->
+            <div class="col-md-4 ">
+                <i class="fas fa-laptop-code fa-3x mb-3 icon-fly-in"></i> <!-- Icon für Zugang zur Technologie -->
+                <h3>Zugang zur Technologie</h3>
+                <p class="text-fly-up">Wir bei it4kids möchten Kindern und Eltern die Türen zur modernen Technologie öffnen.</p>
+            </div>
+            <!-- Kreatives Denken fördern -->
+            <div class="col-md-4">
+                <i class="fas fa-brain fa-3x icon-fly-in mb-3"></i> <!-- Icon für kreatives Denken -->
+                <h3>Kreatives Denken fördern</h3>
+                <p class="text-fly-up">Technologie schärft kreative Problemlösungen und kritisches Denken.</p>
+            </div>
+            <!-- Unsere Mission -->
+            <div class="col-md-4">
+                <i class="fas fa-tools fa-3x icon-fly-in mb-3"></i> <!-- Icon für unsere Mission (Werkzeuge) -->
+                <h3>Unsere Mission</h3>
+                <p class="text-fly-up">Wir geben jedem Kind die Werkzeuge, um die digitale Zukunft zu gestalten.</p>
+            </div>
+        </div>
+
+        <!-- Eltern & Workshop Sektion -->
+        <div class="row mt-5 text-center">            
+            <div class="col-md-6">
+                <i class="fas fa-users fa-3x icon-fly-in mb-3"></i> <!-- Icon für Eltern und Kinder (Gemeinschaft) -->
+                <h3>Eltern einbeziehen</h3>
+                <p class="text-fly-up">Unsere Workshops unterstützen Eltern dabei, ihre Kinder zu begleiten.</p>
+            </div>
+            <!-- Gemeinsam die Zukunft gestalten -->
+            <div class="col-md-6">
+                <i class="fas fa-lightbulb icon-fly-in fa-3x mb-3"></i> <!-- Icon für Ideen und Zukunftsgestaltung -->
+                <h3>Gemeinsam die Zukunft gestalten</h3>
+                <p class="text-fly-up">Technologie ist ein Werkzeug für Kreativität und Zusammenarbeit.</p>
+            </div>
+        </div>
+
+        <!-- Lernt mit uns Sektion -->
+        <section class="lernt-section">
+            <h2>Lernt mit uns</h2>
+            <p>Entdeckt spannende Kurse, die Lernen in Erlebnisse verwandeln.</p>
+        </section>
+
+        <!-- Kursübersicht -->
+        <section class="course-section mt-5">
+            <h2 class="text-center underline">Unsere Kurse</h2>
+            <div class="row">
+                <!-- Kurs Programmierung -->
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <a href="programmierung.html">
+                            <img src="medien/kurskids1.png" alt="Programmierung" class="img-fluid hover-effect" loading="lazy">
+                        </a>
+                        <h3 class="text-center"><a href="programmierung.html">Programmierung</a></h3>
+                        <a href="anmeldung.html" class="btn btn-primary d-block mt-3  pulse anmeldung-btn">Zur Anmeldung</a>
+                    </div>
+                </div>
+                <!-- Kurs Robotik -->
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <a href="robotik.html">
+                            <img src="medien/robotic1.png" alt="Robotik" class="img-fluid hover-effect" loading="lazy">
+                        </a>
+                        <h3 class="text-center"><a href="robotik.html">Robotik</a></h3>
+                        <a href="anmeldung.html" class="btn btn-primary d-block mt-3  pulse anmeldung-btn">Zur Anmeldung</a>
+                    </div>
+                </div>
+                <!-- Kurs Cybersicherheit -->
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <a href="cybersicherheit.html">
+                            <img src="medien/kidsparents.png" alt="Cybersicherheit" class="img-fluid hover-effect" loading="lazy">
+                        </a>
+                        <h3 class="text-center"><a href="cybersicherheit.html">Cybersicherheit</a></h3>
+                        <a href="anmeldung.html" class="btn btn-primary d-block mt-3  pulse anmeldung-btn">Zur Anmeldung</a>
+                    </div>
+                </div>
+                <!-- Kurs Netzwerktechnik -->
+                <div class="col-md-3">
+                    <div class="course-card">
+                        <a href="netzwerktechnik.html">
+                            <img src="medien/kidslernen.png" alt="Netzwerktechnik" class="img-fluid hover-effect" loading="lazy">
+                        </a>
+                        <h3 class="text-center"><a href="netzwerktechnik.html">Netzwerktechnik</a></h3>
+                        <a href="anmeldung.html" class="btn btn-primary d-block mt-3  pulse anmeldung-btn">Zur Anmeldung</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Sektion -->
+        <section class="video-section mt-5">
+            <h2 class="text-center underline">Schaut unser Einführungsvideo an</h2>
+            <video controls class="video-custom mx-auto d-block">
+                <source src="medien/it4kids.mp4" type="video/mp4">
+                Ihr Browser unterstützt das Video-Tag nicht.
+            </video>
+        </section>
+    </article>
+</main>
+
+<!-- Zusätzliche Informationen -->
+<aside class="bg-light p-3 mt-5">
+    <div class="container">
+        <h3>Zusätzliche Informationen</h3>
+        <p>Unsere Kurse sind für Kinder ab 6 Jahren geeignet. Workshops für Eltern sind ebenfalls verfügbar!</p>
+    </div>
+</aside>
+
+
+<!-- Zurück-zum-Anfang Button -->
+<button id="backToTopBtn" title="Go to top" onclick="topFunction()">Top</button>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Firmenname und Adresse -->
+        <p>
+            <strong>it4kids GmbH</strong><br>
+            Musterstrasse 123, 4001 Basel, Schweiz<br>
+            <img src="medien/mail.png" alt="Email Icon" class="footer-icon" loading="lazy"> info@it4kids.ch <br>
+            <img src="medien/phone.png" alt="Phone Icon" class="footer-icon" loading="lazy"> Telefon: +41 12 345 67 89
+        </p>
+        
+        <!-- Verlinkungen zu Impressum und Datenschutz -->
+        <p>
+            <a href="impressum.html" class="text-white">Impressum</a> | 
+            <a href="datenschutz.html" class="text-white">Datenschutzerklärung</a>
+        </p>
+        
+        <!-- Copyright Hinweis -->
+        <p>&copy; 2024 it4kids GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- JavaScript Bibliotheken -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery für Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js für Tooltip-Funktionalität in Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript für die interaktive Funktionalität -->
+<script src="script.js"></script> <!-- Benutzerdefinierte JavaScript-Funktionen -->
+</body>
+</html>

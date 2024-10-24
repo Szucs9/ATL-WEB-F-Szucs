@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Gibt die Sprache der Seite als Deutsch an -->
+<head>
+    <meta charset="UTF-8"> <!-- Gibt das Zeichensatz-Encoding an, um Sonderzeichen korrekt darzustellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Website auf mobilen Geräten in der richtigen Grösse angezeigt wird -->
+    <meta name="description" content="Über uns - it4kids"> <!-- Beschreibt den Inhalt der Seite für Suchmaschinen -->
+    <title>Anmeldung - it4kids</title><!-- Titel der Seite, erscheint im Browser-Tab und Suchmaschinen -->
+    
+    <!-- Bootstrap Stylesheet für responsives Design und Grundgerüst -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Benutzerdefiniertes Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header mit Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap Navbar, die sich bei kleinen Viewports anpasst -->
+        <div class="container"> <!-- Container für die zentrierte Ausrichtung der Navigation -->
+            <!-- Link zur Startseite -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <span class="brand-text">it4kids</span>
+            </a>
+            <!-- Button für die mobile Navigation -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Bootstrap Icon für den Hamburger-Button -->
+            </button>
+
+            <!-- Navigationselemente im Hauptmenü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Navbar-Elemente, die sich am rechten Rand ausrichten -->
+                    <!-- Link zur Seite 'Über uns' -->
+                    <li class="nav-item"><a class="nav-link" href="ueber.html">Über uns</a></li>
+                    <!-- Dropdown-Menü für Kurse -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurse <!-- Name des Dropdown-Menüs -->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurseDropdown">
+                            <!-- Links zu den verschiedenen Kursen -->
+                            <a class="dropdown-item" href="programmierung.html">Programmierung</a>
+                            <a class="dropdown-item" href="robotik.html">Robotik</a>
+                            <a class="dropdown-item" href="cybersicherheit.html">Cybersicherheit</a>
+                            <a class="dropdown-item" href="netzwerktechnik.html">Netzwerktechnik</a>
+                        </div>
+                    </li>
+                    <!-- Link zur Seite 'Anmeldung' -->
+                    <li class="nav-item"><a class="nav-link" href="anmeldung.html">Anmeldung</a></li>
+                    <!-- Link zur Seite 'Kontakt' -->
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hauptinhalt -->
+<main>
+    <section class="container mt-5">
+        <!-- Titel der Anmeldeseite, zentriert dargestellt -->
+        <h1 class="text-center underline-animation formulartitel" id="margin-titel">Anmeldung</h1>
+        <div class="mt-5"></div>
+        <!-- Anmeldeformular -->
+        <form method="POST" class="mx-auto" style="max-width: 600px;">
+            <!-- Namensfeld -->
+            <div class="form-group">
+                <label for="name">Ihr Name <span style="color: red;">*</span></label> <!-- Label für das Namensfeld mit Hinweis auf Pflichtfeld -->
+                <input type="text" class="form-control" id="name" name="name" placeholder="Ihr Name" required> <!-- Textfeld für den Namen, erforderlich -->
+            </div>
+            <!-- E-Mail-Feld -->
+            <div class="form-group">
+                <label for="email">E-Mail-Adresse <span style="color: red;">*</span></label> <!-- Label für das E-Mail-Feld mit Hinweis auf Pflichtfeld -->
+                <input type="email" class="form-control" id="email" name="email" placeholder="Ihre E-Mail" required> <!-- Textfeld für die E-Mail-Adresse, erforderlich -->
+            </div>
+            <!-- Kursauswahl Dropdown -->
+            <div class="form-group">
+                <label for="course">Kursauswahl <span style="color: red;">*</span></label> <!-- Label für die Kursauswahl mit Hinweis auf Pflichtfeld -->
+                <select class="form-control" id="course" name="course"> <!-- Dropdown zur Auswahl eines Kurses -->
+                    <option>Programmierung</option>
+                    <option>Robotik</option>
+                    <option>Cybersicherheit</option>
+                    <option>Netzwerktechnik</option>
+                </select>
+            </div>
+            <!-- Feld für zusätzliche Informationen -->
+            <div class="form-group">
+                <label for="additional-info">Zusätzliche Informationen</label> <!-- Label für zusätzliche Informationen -->
+                <textarea class="form-control" id="additional-info" name="additional-info" rows="6" placeholder="Zusätzliche Informationen?"></textarea> <!-- Textarea-Feld für weitere Angaben, nicht erforderlich -->
+            </div>
+            <!-- Senden Button auf der Anmeldeseite -->
+            <button type="submit" class="btn btn-success pulse mt-3 mb-5">Senden</button> <!-- Button zum Absenden des Formulars -->
+        </form>
+    </section>
+</main>
+
+
+<!-- Zurück-zum-Anfang Button -->
+<button id="backToTopBtn" title="Go to top" onclick="topFunction()">Top</button>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Firmenname und Adresse -->
+        <p>
+            <strong>it4kids GmbH</strong><br>
+            Musterstrasse 123, 4001 Basel, Schweiz<br>
+            <img src="medien/mail.png" alt="Email Icon" class="footer-icon" loading="lazy"> info@it4kids.ch <br>
+            <img src="medien/phone.png" alt="Phone Icon" class="footer-icon" loading="lazy"> Telefon: +41 12 345 67 89
+        </p>
+        
+        <!-- Verlinkungen zu Impressum und Datenschutz -->
+        <p>
+            <a href="impressum.html" class="text-white">Impressum</a> | 
+            <a href="datenschutz.html" class="text-white">Datenschutzerklärung</a>
+        </p>
+        
+        <!-- Copyright Hinweis -->
+        <p>&copy; 2024 it4kids GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- JavaScript Bibliotheken -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery für Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js für Tooltip-Funktionalität in Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript für die interaktive Funktionalität -->
+
+<!-- Skript zur Handhabung des Anmeldeformulars -->
+<script>
+  // Wartet bis der gesamte Inhalt der Seite geladen ist
+  document.addEventListener('DOMContentLoaded', function() {
+    // Wählt das Anmeldeformular aus
+    var contactForm = document.querySelector('form'); 
+
+    if (contactForm) {
+       contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Verhindert, dass das Formular tatsächlich abgesendet wird
+
+        // Zeigt eine Bestätigungsmeldung an
+        alert('Formular erfolgreich versendet');
+        
+        // Leert die Formularfelder nach dem Absenden
+        contactForm.reset();
+      });
+    }
+  });
+</script>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Gibt die Sprache der Seite als Deutsch an -->
+<head>
+    <meta charset="UTF-8"> <!-- Gibt das Zeichensatz-Encoding an, um Sonderzeichen korrekt darzustellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Website auf mobilen Geräten in der richtigen Grösse angezeigt wird -->
+    <meta name="description" content="Über uns - it4kids"> <!-- Beschreibt den Inhalt der Seite für Suchmaschinen -->
+    <title>Über uns - it4kids</title> <!-- Titel der Seite, erscheint im Browser-Tab und Suchmaschinen -->
+    
+    <!-- Bootstrap Stylesheet für responsives Design und Grundgerüst -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Stylesheet für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <!-- Benutzerdefiniertes Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header mit Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap Navbar, die sich bei kleinen Viewports anpasst -->
+        <div class="container"> <!-- Container für die zentrierte Ausrichtung der Navigation -->
+            <!-- Link zur Startseite -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <span class="brand-text">it4kids</span>
+            </a>
+            <!-- Button für die mobile Navigation -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Bootstrap Icon für den Hamburger-Button -->
+            </button>
+
+            <!-- Navigationselemente im Hauptmenü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Navbar-Elemente, die sich am rechten Rand ausrichten -->
+                    <!-- Link zur Seite 'Über uns' -->
+                    <li class="nav-item"><a class="nav-link" href="ueber.html">Über uns</a></li>
+                    <!-- Dropdown-Menü für Kurse -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurse <!-- Name des Dropdown-Menüs -->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurseDropdown">
+                            <!-- Links zu den verschiedenen Kursen -->
+                            <a class="dropdown-item" href="programmierung.html">Programmierung</a>
+                            <a class="dropdown-item" href="robotik.html">Robotik</a>
+                            <a class="dropdown-item" href="cybersicherheit.html">Cybersicherheit</a>
+                            <a class="dropdown-item" href="netzwerktechnik.html">Netzwerktechnik</a>
+                        </div>
+                    </li>
+                    <!-- Link zur Seite 'Anmeldung' -->
+                    <li class="nav-item"><a class="nav-link" href="anmeldung.html">Anmeldung</a></li>
+                    <!-- Link zur Seite 'Kontakt' -->
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hauptinhalt -->
+<main>
+    <section class="container mt-5 about-section">
+        <!-- Unternehmenshintergrund Abschnitt mit Bild -->
+        
+        <h2 class="sr-only">About Section</h2> <!-- "sr-only" sorgt dafür, dass der Titel nur für Screenreader sichtbar ist -->
+        <section class="company-story row mt-5">
+             <!-- Beschreibung der Unternehmensgeschichte -->
+            <div class="col-md-6">
+                <h2 class="underline-animation" id="margin-titel">Unsere Geschichte</h2>
+                <p>
+                    it4kids wurde gegründet, um Kindern den Zugang zu moderner Technologie zu ermöglichen und sie frühzeitig für die digitale Welt zu begeistern. 
+                    Unsere Gründer erkannten die wachsende Bedeutung technologischer Bildung und wollten sicherstellen, dass jedes Kind unabhängig von seiner Herkunft 
+                    die Möglichkeit hat, technologische Fähigkeiten zu entwickeln.
+                </p>
+                <p>
+                    Was als kleines Projekt begann, ist heute eine der führenden Bildungsplattformen der Schweiz, die Kinder und Familien dabei unterstützt, digitale 
+                    Herausforderungen zu meistern. Unser engagiertes Team besteht aus Technikexperten, Pädagogen und Eltern, die sich leidenschaftlich für die 
+                    Förderung der nächsten Generation einsetzen.
+                </p>
+            </div>
+			
+			<!-- Bild zur Darstellung der Unternehmensgeschichte -->
+            <div class="col-md-6 text-center">
+                <img src="medien/about.png" alt="Über it4kids" class="img-fluid rounded shadow" loading="lazy">
+            </div>
+		 </section>
+
+        <!-- Unsere Werte Abschnitt -->
+        <section class="company-values mt-5">
+            <h2 class="text-center underline">Unsere Werte</h2> <!-- Überschrift des Abschnitts 'Unsere Werte', zentriert dargestellt -->
+            <div class="row mt-4 text-center">
+                <!-- Wert 'Wachstum' mit Symbol -->
+                <div class="col-md-3">
+                    <i class="fas fa-seedling fa-3x mb-3 icon-appear" style="color: #00a65a;"></i> <!-- Symbol für Wachstum -->
+                    <h3>Wachstum</h3>
+                    <p>
+                        Bei it4kids fördern wir nicht nur technologische Fähigkeiten, sondern auch persönliches Wachstum. Kinder entwickeln Selbstvertrauen und lernen, sich neuen Herausforderungen zu stellen.
+                    </p>
+                </div>
+                <!-- Wert 'Globales Denken' mit Symbol -->
+                <div class="col-md-3">
+                    <i class="fas fa-globe fa-3x mb-3 icon-appear" style="color: #3498db;"></i> <!-- Symbol für Globales Denken -->
+                    <h3>Globales Denken</h3>
+                    <p>
+                        Wir bereiten Kinder auf eine vernetzte Welt vor, in der sie die Möglichkeit haben, über geografische Grenzen hinaus zu denken und zu handeln.
+                    </p>
+                </div>
+                <!-- Wert 'Empathie' mit Symbol -->
+                <div class="col-md-3">
+                    <i class="fas fa-heart fa-3x mb-3 icon-appear" style="color: #e74c3c;"></i> <!-- Symbol für Empathie -->
+                    <h3>Empathie</h3>
+                    <p>
+                        Technologie sollte nicht nur funktional, sondern auch menschlich sein. Unsere Programme betonen soziale Verantwortung und wie Technologie das Leben verbessern kann.
+                    </p>
+                </div>
+                <!-- Wert 'Zusammenarbeit' mit Symbol -->
+                <div class="col-md-3">
+                    <i class="fas fa-hands-helping fa-3x mb-3 icon-appear" style="color: #f39c12;"></i> <!-- Symbol für Zusammenarbeit -->
+                    <h3>Zusammenarbeit</h3>
+                    <p>
+                        Erfolg in der Technologie erfordert Teamarbeit. Wir fördern kollaborative Lernumgebungen, in denen Kinder gemeinsam Lösungen finden und voneinander lernen.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!-- Zurück-zum-Anfang Button -->
+<button id="backToTopBtn" title="Go to top" onclick="topFunction()">Top</button>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Firmenname und Adresse -->
+        <p>
+            <strong>it4kids GmbH</strong><br>
+            Musterstrasse 123, 4001 Basel, Schweiz<br>
+            <img src="medien/mail.png" alt="Email Icon" class="footer-icon" loading="lazy"> info@it4kids.ch <br>
+            <img src="medien/phone.png" alt="Phone Icon" class="footer-icon" loading="lazy"> Telefon: +41 12 345 67 89
+        </p>
+        
+        <!-- Verlinkungen zu Impressum und Datenschutz -->
+        <p>
+            <a href="impressum.html" class="text-white">Impressum</a> | 
+            <a href="datenschutz.html" class="text-white">Datenschutzerklärung</a>
+        </p>
+        
+        <!-- Copyright Hinweis -->
+        <p>&copy; 2024 it4kids GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- JavaScript Bibliotheken -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery für Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js für Tooltip-Funktionalität in Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript für die interaktive Funktionalität -->
+<script src="script.js"></script> <!-- Benutzerdefinierte JavaScript-Funktionen -->
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Gibt die Sprache der Seite als Deutsch an -->
+<head>
+    <meta charset="UTF-8"> <!-- Gibt das Zeichensatz-Encoding an, um Sonderzeichen korrekt darzustellen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Stellt sicher, dass die Website auf mobilen Geräten in der richtigen Grösse angezeigt wird -->
+    <meta name="description" content="Über uns - it4kids"> <!-- Beschreibt den Inhalt der Seite für Suchmaschinen -->
+    <title>Cybersicherheit - it4kids</title><!-- Titel der Seite, erscheint im Browser-Tab und Suchmaschinen -->
+    
+    <!-- Bootstrap Stylesheet für responsives Design und Grundgerüst -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome Stylesheet für Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+    <!-- Benutzerdefiniertes Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header mit Navigation -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light"> <!-- Bootstrap Navbar, die sich bei kleinen Viewports anpasst -->
+        <div class="container"> <!-- Container für die zentrierte Ausrichtung der Navigation -->
+            <!-- Link zur Startseite -->
+            <a class="navbar-brand mx-auto" href="index.html">
+                <span class="brand-text">it4kids</span>
+            </a>
+            <!-- Button für die mobile Navigation -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Bootstrap Icon für den Hamburger-Button -->
+            </button>
+
+            <!-- Navigationselemente im Hauptmenü -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto"> <!-- Navbar-Elemente, die sich am rechten Rand ausrichten -->
+                    <!-- Link zur Seite 'Über uns' -->
+                    <li class="nav-item"><a class="nav-link" href="ueber.html">Über uns</a></li>
+                    <!-- Dropdown-Menü für Kurse -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurseDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurse <!-- Name des Dropdown-Menüs -->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurseDropdown">
+                            <!-- Links zu den verschiedenen Kursen -->
+                            <a class="dropdown-item" href="programmierung.html">Programmierung</a>
+                            <a class="dropdown-item" href="robotik.html">Robotik</a>
+                            <a class="dropdown-item" href="cybersicherheit.html">Cybersicherheit</a>
+                            <a class="dropdown-item" href="netzwerktechnik.html">Netzwerktechnik</a>
+                        </div>
+                    </li>
+                    <!-- Link zur Seite 'Anmeldung' -->
+                    <li class="nav-item"><a class="nav-link" href="anmeldung.html">Anmeldung</a></li>
+                    <!-- Link zur Seite 'Kontakt' -->
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Hauptinhalt Abschnitt -->
+<main>
+    <section class="container mt-5">
+        <!-- Titel der Cybersicherheit-Seite -->
+        <h1 class="text-center underline-animation titelkurse" id="margin-titel" >Cybersicherheit</h1>
+        
+        <div class="row mt-4">
+            <!-- Kursbild -->
+            <div class="col-md-6">
+                <img src="medien/cyber.png" alt="Cybersicherheit Kurs" class="img-fluid rounded shadow"> <!-- Bild für den Cybersicherheitskurs -->
+            </div>
+            <!-- Kursbeschreibung -->
+            <div class="col-md-6">
+                <h3>Kursbeschreibung</h3>
+                <p>In diesem Kurs lernen Kinder und Eltern, wie sie sich und ihre Daten online schützen können. Wir vermitteln Grundlagen der Cybersicherheit und zeigen, wie man sicher im Internet unterwegs ist.</p>
+                <ul>
+                    <li><i class="fas fa-shield-alt"></i> Sicherheit im Internet</li> 
+                    <li><i class="fas fa-lock"></i> Umgang mit Passwörtern</li>
+                    <li><i class="fas fa-user-shield"></i> Schutz persönlicher Daten</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Kursziele und Vorteile -->
+        <div class="row mt-5">
+            <!-- Ziel 'Online Sicherheit' -->
+            <div class="col-md-4 text-center">
+                <i class="fas fa-shield-alt fa-3x mb-3"></i> <!-- Symbol für Online-Sicherheit -->
+                <h4>Online Sicherheit</h4>
+                <p>Die Kinder und Eltern lernen, wie sie sicher im Internet surfen und Risiken vermeiden können.</p>
+            </div>
+            <!-- Ziel 'Passwortsicherheit' -->
+            <div class="col-md-4 text-center">
+                <i class="fas fa-key fa-3x mb-3"></i> <!-- Symbol für Passwortsicherheit -->
+                <h4>Passwortsicherheit</h4>
+                <p>Verstehen, warum starke Passwörter wichtig sind und wie man diese erstellt und schützt.</p>
+            </div>
+            <!-- Ziel 'Datenschutz' -->
+            <div class="col-md-4 text-center">
+                <i class="fas fa-user-shield fa-3x mb-3"></i> <!-- Symbol für Datenschutz -->
+                <h4>Datenschutz</h4>
+                <p>Die Bedeutung des Schutzes persönlicher Daten im digitalen Raum wird vermittelt.</p>
+            </div>
+        </div>
+
+        <!-- Anmeldung Button -->
+        <div class="text-center mt-5">
+            <a href="anmeldung.html" class="btn btn-success green-anmelde-btn btn-lg mt-3 mb-5">Zur Anmeldung</a> 
+        </div>
+    </section>
+</main>
+
+
+
+<!-- Zurück-zum-Anfang Button -->
+<button id="backToTopBtn" title="Go to top" onclick="topFunction()">Top</button>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Firmenname und Adresse -->
+        <p>
+            <strong>it4kids GmbH</strong><br>
+            Musterstrasse 123, 4001 Basel, Schweiz<br>
+            <img src="medien/mail.png" alt="Email Icon" class="footer-icon" loading="lazy"> info@it4kids.ch <br>
+            <img src="medien/phone.png" alt="Phone Icon" class="footer-icon" loading="lazy"> Telefon: +41 12 345 67 89
+        </p>
+        
+        <!-- Verlinkungen zu Impressum und Datenschutz -->
+        <p>
+            <a href="impressum.html" class="text-white">Impressum</a> | 
+            <a href="datenschutz.html" class="text-white">Datenschutzerklärung</a>
+        </p>
+        
+        <!-- Copyright Hinweis -->
+        <p>&copy; 2024 it4kids GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+</footer>
+
+<!-- JavaScript Bibliotheken -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery für Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script> <!-- Popper.js für Tooltip-Funktionalität in Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript für die interaktive Funktionalität -->
+<script src="script.js"></script> <!-- Benutzerdefinierte JavaScript-Funktionen -->
+</body>
+</html>
